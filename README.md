@@ -45,7 +45,12 @@ with no frameworks, build tools, or backend.
 
 ## 📸 Screenshots
 
-<!-- Drag your exported screenshots here, replacing this line -->
+<!-- Drag<img width="1860" height="895" alt="צילום מסך 2026-08-09 182210" 
+<img width="1904" height="914" alt="צילום מסך 2026-08-09 194713" src="https://github.com/user-attachments/assets/4040cf45-f5b0-4edf-a62c-2160651d6b33" />
+<img width="1910" height="900" alt="צילום מסך 2026-08-06 162856" src="https://github.com/user-attachments/assets/56e3ab2b-545d-4e4a-bc72-ab33fcfcf607" />
+
+src="https://github.com/user-attachments/assets/58f8ca20-9a01-4278-9005-2fb62e4d5cb7" />
+ your exported screenshots here, replacing this line -->
 
 ##  Tech Stack
 
