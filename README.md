@@ -1,4 +1,4 @@
-#  Memory Game - זיכרון
+#  Memory Game 
 
 A browser-based memory (concentration) card game with player profiles,
 selectable themes and difficulty levels, and a persistent local
@@ -26,9 +26,9 @@ with no frameworks, build tools, or backend.
 
   | Difficulty | Pairs | Grid | Time limit |
   |---|---|---|---|
-  | Easy (קל) | 6 | 3×2 | 60s |
-  | Medium (בינוני) | 8 | 4×2 | 80s |
-  | Hard (קשה) | 10 | 5×2 | 100s |
+  | Easy  | 6 | 3×2 | 60s |
+  | Medium  | 8 | 4×2 | 80s |
+  | Hard  | 10 | 5×2 | 100s |
 
 - **Live game stats** - move counter, countdown timer, and matched
   pairs, all updated in real time as you play.
