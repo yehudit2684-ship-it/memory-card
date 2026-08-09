@@ -1,0 +1,235 @@
+
+* {
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   font-family: 'Comic Neue', 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3B3B3B;
+    position: relative;
+    background-image: url('backgroun/b8.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container {
+    width: 650px;
+    text-align: center;
+    background: white;
+    padding: 40px;
+    border-radius: 25px;
+    border: 5px solid #3B3B3B;
+    box-shadow: 10px 10px 0 #FF8C42;
+    position: relative;
+    z-index: 2;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #3B3B3B;
+    background: #FFF176;
+    padding: 15px 30px;
+    border-radius: 30px;
+    display: inline-block;
+    font-family: 'Fredoka One', cursive;
+    box-shadow: 4px 4px 0 #FF8C42;
+    border: 4px solid #3B3B3B;
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+.game-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.game-controls label {
+    font-weight: bold;
+    color: #3B3B3B;
+    font-size: 1.1em;
+}
+
+.game-controls select {
+    background: #FFFFFF;
+    border: 3px solid #3B3B3B;
+    border-radius: 12px;
+    padding: 12px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 150px;
+    font-family: inherit;
+}
+
+.game-controls select:hover,
+.game-controls select:focus {
+    border-color: #FF8C42;
+    box-shadow: 0 0 10px rgba(255, 140, 66, 0.4);
+}
+
+#startGameBtn {
+    background: #FF8C42;
+    border: 4px solid #3B3B3B;
+    color: white;
+    padding: 15px 40px;
+    margin: 20px 0;
+    border-radius: 15px;
+    font-size: 1.3em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 4px 4px 0 #3B3B3B;
+    text-transform: uppercase;
+    font-family: 'Fredoka One', cursive;
+}
+
+#startGameBtn:hover {
+    background: #FFD447;
+    color: #3B3B3B;
+    transform: translateY(-2px);
+}
+
+.login-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.login-box {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    border: 5px solid #3B3B3B;
+    box-shadow: 8px 8px 0 #FF8C42;
+    text-align: center;
+    min-width: 350px;
+}
+
+.login-box h2 {
+    color: #3B3B3B;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.login-input {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border: 3px solid #3B3B3B;
+    border-radius: 10px;
+    font-size: 1.1em;
+    background: #FFFFFF;
+    color: #3B3B3B;
+    font-family: inherit;
+    text-align: center;
+}
+
+.difficulty-btn {
+    background: #FFF176;
+    border: 3px solid #3B3B3B;
+    color: #3B3B3B;
+    padding: 12px 25px;
+    margin: 10px;
+    border-radius: 15px;
+    font-size: 1.1em;
+    transition: all 0.2s ease;
+    box-shadow: 4px 4px 0 #FF8C42;
+}
+
+.difficulty-btn:hover {
+    background: #FF8C42;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.player-info {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: 3px solid #3B3B3B;
+    font-weight: bold;
+    color: #3B3B3B;
+    z-index: 10;
+    display: none;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1em;
+}
+
+.logout-btn {
+    background: #FF8C42;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: all 0.2s ease;
+    box-shadow: 2px 2px 0 #3B3B3B;
+}
+
+.logout-btn:hover {
+    background: #FFD447;
+    color: #3B3B3B;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 30px 20px;
+    }
+
+    .game-controls {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #startGameBtn {
+        padding: 12px 30px;
+        font-size: 1.1em;
+    }
+
+    .login-box {
+        min-width: 300px;
+        padding: 30px;
+    }
+
+    .player-info {
+        position: relative;
+        top: auto;
+        left: auto;
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+}

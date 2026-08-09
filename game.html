@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="game_style.css">
+    
+
+</head>
+
+<body>
+    <div class="main-main-container">
+                    <div class="controls">
+                <button class="btn" onclick="restartGame()">התחל מחדש</button>
+                <button class="btn" onclick="goHome()">חזור לתחילה</button>
+            </div>
+    <div class="main-container">
+ 
+        <div class="game-container">
+            
+            <div class="game-info">
+                <span> מהלכים: <span id="moves">0</span></span>
+                <span> זמן: <span id="timer">60</span></span>
+                <span> זוגות: <span id="matches">0</span>/<span id="totalPairs">0</span></span>
+            </div>
+
+            <div id="gameBoard" class="game-board"></div>
+
+            <div id="gameMessage" class="message" style="display: none;"></div>
+
+        </div>
+            </div>
+            </div>
+      
+        <div class="scores-sidebar">
+            <div id="playerInfo" class="player-info-game">
+                <span style="color: #8B4513;">👤</span>
+                <span id="currentPlayerName"></span>
+            </div>
+
+            <div class="scores-toggle">
+                <button class="toggle-btn active" id="personalScoresBtn" onclick="showPersonalScores()">השיאים שלי</button>
+                <button class="toggle-btn" id="allScoresBtn" onclick="showAllScores()">כל השיאים</button>
+            </div>
+
+            <div class="scores-table">
+                <h3 style="color: #8B4513; margin-bottom: 15px;" id="scoresTitle">השיאים שלי:</h3>
+                <div id="scoresDisplay"></div>
+            </div>
+        </div>
+    </div>
+    <script src="game_js.js"></script>
+</body>
+
+</html>

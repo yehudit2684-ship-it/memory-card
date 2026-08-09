@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>משחק זיכרון</title>
+    <link rel="stylesheet" href="index_style.css">
+</head>
+
+<body>
+    <div id="loginOverlay" class="login-overlay" style="display: flex;">
+        <form class="login-box" onsubmit="loginPlayer(); return false;">
+            <h2>הכנס את שמך</h2>
+            <input
+                type="text"
+                id="playerNameInput"
+                class="login-input"
+                placeholder="שם השחקן"
+                maxlength="20"
+                autocomplete
+                autofocus
+                required
+            />
+            <div style="margin-top: 20px;">
+                <button type="submit" class="difficulty-btn">התחל משחק</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="playerInfo" class="player-info">
+        <span style="color: #8B4513;">👤</span>
+        <span id="currentPlayerName"></span>
+        <button class="logout-btn" onclick="showLoginScreen()">החלף שחקן</button>
+    </div>
+
+    <div class="container">
+        <div id="homePage" class="page active">
+            <div class="game-controls">
+                <label for="theme">בחר קטגוריה:</label>
+                <select id="category" name="category">
+                     <option value="">קטגוריה</option> 
+                    <option value="emoji">אמוג'י</option>
+                    <option value="fruits">פירות</option>
+                    <option value="vehicles">כלי תחבורה</option>
+                    <option value="food">אוכל</option>
+                </select>
+
+                <label for="level">בחר רמה:</label>
+                <select id="level" name="level">
+                    <option value=""> רמת קושי</option>
+                    <option value="easy">קל</option>
+                    <option value="medium">בינוני</option>
+                    <option value="hard">קשה</option>
+                </select>
+            </div>
+            
+            <button id="startGameBtn">!Let's Play</button>
+        </div>
+    </div>
+    
+    <script src="index_js.js"></script>
+</body>
+
+</html>
